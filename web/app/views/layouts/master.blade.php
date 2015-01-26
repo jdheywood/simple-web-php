@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{{ isset($pageTitle) ? $pageTitle . ' | ' : '' }}}Bootstrap 101 Template</title>
+    <title>{{{ isset($pageTitle) ? $pageTitle . ' | ' : '' }}}Stuffff...</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,8 @@
     <![endif]-->
 </head>
 <body>
+
+    @include('navigation.main')
 
     @section('pageTitle')
     @show
