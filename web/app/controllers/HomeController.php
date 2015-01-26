@@ -20,4 +20,13 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function home() {
+		$this->layout->messages = array();
+
+		$var = 'alreet';
+		$pageTitle = 'does this set the page title tho?';
+
+		$this->layout->content = View::make('home.basic', array('var' => $var, 'pageTitle' => $pageTitle));
+	}
+
 }
