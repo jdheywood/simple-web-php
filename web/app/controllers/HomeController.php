@@ -20,13 +20,14 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
-	public function home() {
+	public function index() {
 		$this->layout->messages = array();
 
-		$var = 'alreet';
-		$pageTitle = 'does this set the page title tho?';
+		$pageTitle = "There's no place like 127.0.0.1";
+		$navigationActive = 'home';
 
-		$this->layout->content = View::make('home.basic', array('var' => $var, 'pageTitle' => $pageTitle));
+		$this->layout->content = View::make('home.index');
+		View::share(array('pageTitle' => $pageTitle, 'navigationActive' => $navigationActive));
 	}
 
 }

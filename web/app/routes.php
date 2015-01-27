@@ -16,6 +16,9 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/', array('as' => '/', 'uses' => 'HomeController@home'));
-Route::get('home', array('as' => 'home', 'uses' => 'HomeController@home'));
+Route::get('/', array('as' => '/', 'uses' => 'HomeController@index'));
+Route::get('home', array('as' => 'home', 'uses' => 'HomeController@index'));
 
+Route::get('about', array('as' => 'about', 'uses' => 'AboutController@index'));
+
+Route::get('contact', array('as' => 'contact', 'uses' => 'ContactController@index'));

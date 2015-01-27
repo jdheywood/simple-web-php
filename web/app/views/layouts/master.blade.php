@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    @include('navigation.main')
+    @include('navigation.main', array('navigationActive' => $navigationActive))
 
     @section('pageTitle')
     @show
