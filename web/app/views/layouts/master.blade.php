@@ -19,15 +19,20 @@
     <![endif]-->
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            @include('navigation.main', array('navigationActive' => $navigationActive))
+        </div>
 
-    @include('navigation.main', array('navigationActive' => $navigationActive))
+        @section('pageTitle')
+        @show
 
-    @section('pageTitle')
-    @show
+        @yield('content')
 
-    @yield('content')
-
-
+        <div class="footer">
+            <p>© jdheywood 2015</p>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
