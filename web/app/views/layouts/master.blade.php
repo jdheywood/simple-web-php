@@ -7,6 +7,9 @@
 
     <title>{{{ isset($pageTitle) ? $pageTitle . ' | ' : '' }}}Stuffff...</title>
 
+    <!-- Main -->
+    <link href="css/main.css" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
